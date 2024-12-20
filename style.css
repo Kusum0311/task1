@@ -1,0 +1,81 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation Bar Styling */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+
+#navbar ul li {
+  margin: 0 15px;
+}
+
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+  color: #00aaff;
+}
+
+/* Section Styling */
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home {
+  background-color: #f1f1f1;
+}
+
+#about {
+  background-color: #e2e2e2;
+}
+
+#services {
+  background-color: #d3d3d3;
+}
+
+#contact {
+  background-color: #c4c4c4;
+}
+
+/* Sticky Navbar Effect */
+.sticky {
+  background-color: #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #navbar ul {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  #navbar ul li {
+    margin: 10px 0;
+  }
+}
